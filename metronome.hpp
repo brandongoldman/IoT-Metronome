@@ -102,7 +102,7 @@ void metronome::calculateBPM(float time, int count)
  
         float total_time = bpm * recentBeat2 + diff;
         bpm = total_time / recentBeat1;
-        float bpm_val = 60 / bpm;
+        float bpm_val = 60 * bpm;
         printf("BPM for last 4 beats is: %f",bpm_val);
         printf("\r\n");
     }   
